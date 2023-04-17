@@ -8,6 +8,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
     }
 
     try {
+        console.log("do we get here?2")
         const { animeId } = req.query
 
         if (typeof animeId != 'string') {
