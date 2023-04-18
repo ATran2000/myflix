@@ -12,7 +12,7 @@ export default function Home() {
     <>
       <Head>
         <title>myFlix</title>
-        <meta property="og:url" content="https://myFlix.vercel.app/" />
+        <meta property="og:url" content="https://alvins-myflix.vercel.app/" />
         <meta property="og:type" content="website" />
         <meta
           property="og:title"
