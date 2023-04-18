@@ -24,7 +24,7 @@ export default function Home() {
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
-        <meta property="og:image:secure_url" content="https://myFlix.vercel.app/images/profile.jpg" />
+        <meta property="og:image:secure_url" content="https://alvins-myflix.vercel.app/images/profile.jpg" />
       </Head>
       <h1 className="text-white px-2 py-2">myFlix!</h1>
       <InfoModal visible={isOpen} onClose={closeModal} />
