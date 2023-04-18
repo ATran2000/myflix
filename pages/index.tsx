@@ -7,7 +7,6 @@ import useInfoModal from "@/hooks/useInfoModal"
 export default function Home() {
   const { data: animes = [] } = useAnimeList()
   const { isOpen, closeModal } = useInfoModal()
-  console.log(animes)
 
   return (
     <>
