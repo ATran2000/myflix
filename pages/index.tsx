@@ -16,15 +16,15 @@ export default function Home() {
         <meta property="og:type" content="website" />
         <meta
           property="og:title"
-          content="Alvin's myFlix"
+          content="myFlix"
         />
         <meta
           property="og:description"
           content="Check out my favorite anime!"
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta property="og:image:secure_url" content="https://alvins-donut-capybara.vercel.app/images/profile.jpg" />
         <link rel="icon" href="/favicon.ico" />
-        <meta property="og:image:secure_url" content="https://alvins-myflix.vercel.app/images/profile.jpg" />
       </Head>
       <h1 className="text-white px-2 py-2">myFlix!</h1>
       <InfoModal visible={isOpen} onClose={closeModal} />
