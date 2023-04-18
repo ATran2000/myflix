@@ -14,6 +14,7 @@ export default function AnimeCard({ data }: AnimeCardProps) {
     return (
         <div className="group bg-zinc-900 col-span relative h-[34vw]">
             <img
+                onClick={() => openModal(data?.id)}
                 className="
                 cursor-pointer
                 object-cover
@@ -49,6 +50,7 @@ export default function AnimeCard({ data }: AnimeCardProps) {
 
             >
                 <img
+                    onClick={() => openModal(data?.id)}
                     className="
                         cursor-pointer
                         object-cover
