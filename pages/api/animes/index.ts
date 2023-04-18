@@ -2,7 +2,6 @@ import { NextApiRequest, NextApiResponse } from "next"
 import prismadb from '@/lib/prismadb'
 
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
-    console.log("in api/animes/index.ts")
     if (req.method != 'GET') {
         return res.status(405).end()
     }
