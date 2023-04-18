@@ -72,7 +72,7 @@ export default function InfoModal({ visible, onClose }: InfoModalProps) {
                                 h-full
                                 pointer-events-none
                             "
-                            src={data?.videoUrl + "&mute=1&controls=0"}
+                            src={data?.videoUrl + "&controls=0"}
                             title="YouTube video player" 
                             allow="autoplay" 
                             allowFullScreen>
