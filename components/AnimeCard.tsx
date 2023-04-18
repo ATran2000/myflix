@@ -13,9 +13,7 @@ export default function AnimeCard({ data }: AnimeCardProps) {
 
     return (
         <div className="group bg-zinc-900 col-span relative h-[34vw]">
-            <img
-                onClick={() => openModal(data?.id)}
-                className="
+            <img onClick={() => openModal(data?.id)} className="
                 cursor-pointer
                 object-cover
                 transition
@@ -27,72 +25,61 @@ export default function AnimeCard({ data }: AnimeCardProps) {
                 delay-300
                 w-full
                 h-[34vw]
-            "
-                src={data.thumbnailUrl} alt="Thumbnail" />
-            <div
-                className="
-                    opacity-0
-                    absolute
-                    top-0
+            " src={data.thumbnailUrl} alt="Thumbnail" />
+            <div className="
+                opacity-0
+                absolute
+                top-0
+                transition
+                duration-200
+                z-10
+                invisible
+                sm:visible
+                delay-300
+                w-full
+                scale-0
+                group-hover:scale-110
+                group-hover:-transition-y-[6vw]
+                group-hover:translate-x-[1vw]
+                group-hover:opacity-100
+            ">
+                <img onClick={() => openModal(data?.id)} className="
+                    cursor-pointer
+                    object-cover
                     transition
-                    duration-200
-                    z-10
-                    invisible
-                    sm:visible
-                    delay-300
+                    duration
+                    shadow-xl
+                    rounded-t-md
                     w-full
-                    scale-0
-                    group-hover:scale-110
-                    group-hover:-transition-y-[6vw]
-                    group-hover:translate-x-[1vw]
-                    group-hover:opacity-100
-                "
-
-            >
-                <img
-                    onClick={() => openModal(data?.id)}
-                    className="
-                        cursor-pointer
-                        object-cover
-                        transition
-                        duration
-                        shadow-xl
-                        rounded-t-md
-                        w-full
-                        h-[34vw]
-                    "
-                    src={data.thumbnailUrl} alt="Thumbnail" />
-                <div
-                    className="
-                        z-10
-                        bg-zinc-800
-                        p-2
-                        lg:p-4
-                        absolute
-                        w-full
-                        transition
-                        shadow-md
-                        rounded-b-md
-                    "
-                >
+                    h-[34vw]
+                " src={data.thumbnailUrl} alt="Thumbnail" />
+                <div className="
+                    z-10
+                    bg-zinc-800
+                    p-2
+                    lg:p-4
+                    absolute
+                    w-full
+                    transition
+                    shadow-md
+                    rounded-b-md
+                ">
                     <div className="flex flex-row items-center gap-3">
-                        <div
-                            className="
-                                cursor-pointer
-                                w-6
-                                h-6
-                                lg:w-10
-                                lg:h-10
-                                bg-white
-                                rounded-full
-                                flex
-                                justify-center
-                                items-center
-                                transition
-                                hover:bg-neutral-300
-                            "
-                            onClick={() => router.push(`/watch/${data?.id}`)}
-                        >
+                        <div className="
+                            cursor-pointer
+                            w-6
+                            h-6
+                            lg:w-10
+                            lg:h-10
+                            bg-white
+                            rounded-full
+                            flex
+                            justify-center
+                            items-center
+                            transition
+                            hover:bg-neutral-300
+                        "
+                        onClick={() => router.push(`/watch/${data?.id}`)}>
                             <BsFillPlayFill size={35} />
                         </div>
                         <p className="text-white text-md md:text-xl lg:text-2xl font semibold mb-4 h-5">
