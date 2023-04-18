@@ -17,5 +17,6 @@ model Anime {
   videoUrl     String
   thumbnailUrl String
   genre        String
-  duration     String
+  episodes     String
+  releaseDate  String
 }

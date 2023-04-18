@@ -117,10 +117,10 @@ export default function AnimeCard({ data }: AnimeCardProps) {
                         </div>
                     </div>
                     <p className="text-green-400 font-semibold mt-2">
-                        New <span className="text-white">2023</span>
+                        {data.releaseDate}
                     </p>
                     <div className="flex flex-row mt-2 gap-2 items-center">
-                        <p className="text-white text-[10px] lg:text-sm">{data.duration}</p>
+                        <p className="text-white text-[10px] lg:text-sm">{data.episodes}</p>
                     </div>
                     <div className="flex flex-row mt-2 gap-2 items-center">
                         <p className="text-white text-[10px] lg:text-sm">{data.genre}</p>

@@ -113,7 +113,7 @@ export default function InfoModal({ visible, onClose }: InfoModalProps) {
                             New
                         </p>
                         <p className="text-white text-lg">
-                            {data?.duration}
+                            {data?.episodes}
                         </p>
                         <p className="text-white text-lg">
                             {data?.genre}
