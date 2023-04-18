@@ -12,7 +12,7 @@ export default function AnimeCard({ data }: AnimeCardProps) {
     const { openModal } = useInfoModal()
 
     return (
-        <div className="group bg-zinc-900 col-span relative h-[30vw]">
+        <div className="group bg-zinc-900 col-span relative h-[34vw]">
             <img
                 className="
                 cursor-pointer
@@ -25,7 +25,7 @@ export default function AnimeCard({ data }: AnimeCardProps) {
                 sm:group-hover:opacity-0
                 delay-300
                 w-full
-                h-[30vw]
+                h-[34vw]
             "
                 src={data.thumbnailUrl} alt="Thumbnail" />
             <div
@@ -43,7 +43,7 @@ export default function AnimeCard({ data }: AnimeCardProps) {
                     scale-0
                     group-hover:scale-110
                     group-hover:-transition-y-[6vw]
-                    group-hover:translate-x-[2vw]
+                    group-hover:translate-x-[1vw]
                     group-hover:opacity-100
                 "
 
@@ -57,7 +57,7 @@ export default function AnimeCard({ data }: AnimeCardProps) {
                         shadow-xl
                         rounded-t-md
                         w-full
-                        h-[30vw]
+                        h-[34vw]
                     "
                     src={data.thumbnailUrl} alt="Thumbnail" />
                 <div
