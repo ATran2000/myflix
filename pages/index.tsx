@@ -9,7 +9,7 @@ export default function Home() {
   const { isOpen, closeModal } = useInfoModal()
 
   return (
-    <>
+    <div>
       <Head>
         <title>myFlix</title>
         <meta property="og:url" content="https://alvins-myflix.vercel.app/" />
@@ -30,6 +30,6 @@ export default function Home() {
       <h1 className="text-white px-2 py-2">myFlix!</h1>
       <InfoModal visible={isOpen} onClose={closeModal} />
       <AnimeList title="Alvin's Favorites" data={animes} />
-    </>
+    </div>
   )
 }
