@@ -63,13 +63,15 @@ export default function InfoModal({ visible, onClose }: InfoModalProps) {
                     bg-zinc-900
                     drop-shadow-md
                 `}>
-                    <div className="relative h-96">
+                    <div className="relative h-24 md:h-96">
                         <iframe
                             className="
-                                w-full
+                                w:24
+                                h:24
+                                md:w-full
+                                md:h-full
                                 brightness-[60%]
                                 object-cover
-                                h-full
                                 pointer-events-none
                             "
                             src={data?.videoUrl + "&controls=0"}
