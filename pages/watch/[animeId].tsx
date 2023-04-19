@@ -31,7 +31,7 @@ export default function Watch() {
                 </p>
             </nav>
             <iframe 
-                className="h-full w-full" 
+                className="h-48 md:h-full w-full" 
                 src={data?.videoUrl} 
                 title="YouTube video player" 
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
