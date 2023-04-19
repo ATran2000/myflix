@@ -63,13 +63,11 @@ export default function InfoModal({ visible, onClose }: InfoModalProps) {
                     bg-zinc-900
                     drop-shadow-md
                 `}>
-                    <div className="relative h-24 md:h-96">
+                    <div className="relative h-96">
                         <iframe
                             className="
-                                w:24
-                                h:24
-                                md:w-full
-                                md:h-full
+                                h-full
+                                w-full
                                 brightness-[60%]
                                 object-cover
                                 pointer-events-none
