@@ -22,7 +22,7 @@ export default function Watch() {
                 bg-black
                 bg-opacity-70
             ">
-                <AiOutlineArrowLeft onClick={() => router.push('/')} className="text-white cursor-pointer" size={48}/>
+                <AiOutlineArrowLeft onClick={() => router.push('/')} className="text-white cursor-pointer" size={48} />
                 <p className="text-white text-1xl md:text-3xl font-bold">
                     <span className="font-light">
                         Watching:
@@ -30,13 +30,14 @@ export default function Watch() {
                     {data?.title}
                 </p>
             </nav>
-            <iframe 
-                className="h-48 md:h-full w-full" 
-                src={data?.videoUrl} 
-                title="YouTube video player" 
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            <div className="pt-80 md:p-0"></div>
+            <iframe
+                className="h-48 md:h-full w-full"
+                src={data?.videoUrl}
+                title="YouTube video player"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 allowFullScreen>
             </iframe>
-        </div>
+        </div >
     )
 }
