@@ -63,10 +63,10 @@ export default function InfoModal({ visible, onClose }: InfoModalProps) {
                     bg-zinc-900
                     drop-shadow-md
                 `}>
-                    <div className="relative h:48 md:h-96">
+                    <div className="relative h:64 md:h-96">
                         <iframe
                             className="
-                                h-48
+                                h-64
                                 h-full
                                 w-full
                                 brightness-[60%]
@@ -107,7 +107,7 @@ export default function InfoModal({ visible, onClose }: InfoModalProps) {
                             </div>
                         </div>
                     </div>
-                    <div className="px-12 py-8 h-96 overflow-auto scrollbar">
+                    <div className="px-12 py-8 h:64 md:h-96 overflow-auto scrollbar">
                         <p className="text-white text-lg">
                             {data?.episodes}
                         </p>
