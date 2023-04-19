@@ -107,7 +107,7 @@ export default function InfoModal({ visible, onClose }: InfoModalProps) {
                             </div>
                         </div>
                     </div>
-                    <div className="px-12 py-8 h-64 md:h-96 overflow-auto scrollbar">
+                    <div className="px-12 py-6 h-64 md:h-96 overflow-auto scrollbar">
                     <p className="text-green-400 font-semibold text-lg">
                             {data?.releaseDate}
                         </p>
