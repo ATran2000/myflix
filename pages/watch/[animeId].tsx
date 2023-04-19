@@ -30,7 +30,7 @@ export default function Watch() {
                     {data?.title}
                 </p>
             </nav>
-            <div className="pt-72 md:p-0"></div>
+            <div className="pt-64 md:p-0"></div>
             <iframe
                 className="h-48 md:h-full w-full"
                 src={data?.videoUrl}
