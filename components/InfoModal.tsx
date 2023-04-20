@@ -99,7 +99,7 @@ export default function InfoModal({ visible, onClose }: InfoModalProps) {
                             bottom-[10%]
                             left-12
                         ">
-                            <p className="text-white text-3xl md:text-4xl h-full lg:text-5xl font-bold mb-8">
+                            <p className="font-mono text-pink-400 text-3xl md:text-4xl h-full lg:text-5xl font-bold mb-8">
                                 {data?.title}
                             </p>
                             <div className="flex flex-row gap-4 items-center">

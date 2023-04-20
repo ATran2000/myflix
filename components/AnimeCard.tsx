@@ -82,7 +82,7 @@ export default function AnimeCard({ data }: AnimeCardProps) {
                         onClick={() => router.push(`/watch/${data?.id}`)}>
                             <BsFillPlayFill size={35} />
                         </div>
-                        <p className="text-white text-md md:text-xl lg:text-2xl font semibold mb-4 h-5">
+                        <p className="font-mono text-pink-400 text-md md:text-xl lg:text-2xl font semibold mb-4 h-5">
                             {data.title}
                         </p>
                         <div onClick={() => openModal(data?.id)} className="
