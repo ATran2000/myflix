@@ -40,6 +40,7 @@ export default function AnimeCard({ data }: AnimeCardProps) {
                 scale-0
                 group-hover:scale-110
                 group-hover:-transition-y-[6vw]
+                group-hover:translate-y-[0.5vw]
                 group-hover:translate-x-[1vw]
                 group-hover:opacity-100
             ">
