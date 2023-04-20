@@ -23,11 +23,8 @@ export default function Watch() {
                 bg-opacity-70
             ">
                 <AiOutlineArrowLeft onClick={() => router.push('/')} className="text-white cursor-pointer" size={48} />
-                <p className="text-white text-1xl md:text-3xl font-bold">
-                    <span className="font-light">
-                        Watching:
-                    </span>
-                    {data?.title}
+                <p className="text-pink-400 text-1xl md:text-3xl font-bold">
+                    <span className="text-white font-light">Watching Trailer for:</span> <span className="font-mono">{data?.title}</span>
                 </p>
             </nav>
             <div className="pt-60 md:p-0"></div>
