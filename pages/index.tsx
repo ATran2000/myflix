@@ -28,7 +28,7 @@ export default function Home() {
         <meta property="og:image:height" content="500"/>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <h1 className="text-white px-2 py-2">myFlix!</h1>
+      <h4 className="font-mono font-semibold text-7xl text-green-400 px-2 py-2">myFlix!</h4>
       <InfoModal visible={isOpen} onClose={closeModal} />
       <AnimeList title="Alvin's Favorites" data={animes} />
     </div>
