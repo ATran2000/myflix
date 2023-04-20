@@ -9,6 +9,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      backgroundImage: {
+        'hero' : "url('http://localhost:3000/images/hero.gif')",
+      },
       fontFamily: {
         mono: ['var(--font-dynapuff)', ...fontFamily.mono],
       }
