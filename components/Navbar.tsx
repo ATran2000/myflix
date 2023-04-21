@@ -1,9 +1,8 @@
 import Link from "next/link";
 import NavbarItem from "./NavbarItem";
-import { useCallback, useState, useEffect } from 'react'
-import { BsChevronDown, BsSearch, BsBell } from 'react-icons/bs'
+import { useState, useEffect } from 'react'
 
-const TOP_OFFSET = 39
+const TOP_OFFSET = 30
 
 export default function Navbar() {
     const [showBackground, setShowBackground] = useState(false)

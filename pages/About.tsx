@@ -23,7 +23,17 @@ export default function About() {
                 <meta name="twitter:card" content="summary_large_image" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
-            <Navbar />
+            <div className="bg-zinc-900 bg-opacity-90">
+                <Navbar />
+            </div>
+            <div className="snap-y snap-mandatory h-screen overflow-y-auto duration-0">
+                <div className="snap-start duration-1">
+                    <img className="w-full" src="/images/chainsaw_man_movie_theater.gif" alt="Chainsaw Man Movie Theater Gif" />
+                </div>
+                <div className="snap-start h-screen bg-gradient-to-b from-black to-zinc-900">
+                    <p className="font-mono text-white text-5xl pt-24 ">About</p>
+                </div>
+            </div>
         </div>
     )
 }
