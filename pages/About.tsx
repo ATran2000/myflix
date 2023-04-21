@@ -26,10 +26,10 @@ export default function About() {
             <Navbar />
             <div className="snap-y snap-mandatory h-screen overflow-y-auto">
                 <div className="snap-start snap-always">
-                    <img className="w-full h-screen" src="/images/chainsaw_man_movie_theater.gif" alt="Chainsaw Man Movie Theater Gif" />
+                    <img className="w-full md:h-screen" src="/images/chainsaw_man_movie_theater.gif" alt="Chainsaw Man Movie Theater Gif" />
                 </div>
                 <div className="snap-start snap-always h-screen bg-gradient-to-b from-black to-zinc-900">
-                    <h1 className="font-mono text-white text-5xl pt-24 ">About</h1>
+                    <h1 className="font-mono text-green-400 text-center text-5xl pt-24 ">About</h1>
                 </div>
             </div>
         </div>
