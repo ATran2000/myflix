@@ -1,3 +1,4 @@
+import Link from "next/link";
 import NavbarItem from "./NavbarItem";
 import { useCallback, useState, useEffect } from 'react'
 import { BsChevronDown, BsSearch, BsBell } from 'react-icons/bs'
@@ -41,7 +42,7 @@ export default function Navbar() {
                 `}
             >
                 <div className="text-green-400 hover:text-pink-400 cursor-pointer">
-                    <h1 className="text-center font-mono font-semibold text-4xl px-2 py-6">myFli<span className="text-pink-400">x</span></h1>
+                    <Link href="/"><h1 className="text-center font-mono font-semibold text-4xl px-2 py-6">myFli<span className="text-pink-400">x</span></h1></Link>
                 </div>
                 <div
                     className="
@@ -52,9 +53,8 @@ export default function Navbar() {
                         lg:flex
                     "
                 >
-                    <NavbarItem label="Home" />
-                    <NavbarItem label="Random Reccomendation" />
-                    <NavbarItem label="About" />
+                    <Link href="/"> <NavbarItem label="Home" /> </Link>
+                    <Link href="/About"> <NavbarItem label="About" /> </Link>
                 </div>
             </div>
         </nav>
