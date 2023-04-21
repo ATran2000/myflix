@@ -10,7 +10,7 @@ export default function Home() {
   const { isOpen, closeModal } = useInfoModal()
 
   return (
-    <div className="bg-hero bg-no-repeat bg-bottom">
+    <div className="bg-anya bg-no-repeat bg-bottom">
       <Head>
         <title>myFlix</title>
         <meta property="og:url" content="https://alvins-myflix.vercel.app/" />

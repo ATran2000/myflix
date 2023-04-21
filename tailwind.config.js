@@ -10,7 +10,7 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        'hero' : "url('https://alvins-myflix.vercel.app/images/hero.gif')",
+        'anya' : "url('https://alvins-myflix.vercel.app/images/anya.gif')",
       },
       fontFamily: {
         mono: ['var(--font-dynapuff)', ...fontFamily.mono],
