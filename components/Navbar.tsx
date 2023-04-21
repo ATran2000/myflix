@@ -53,7 +53,7 @@ export default function Navbar() {
                     <Link href="/"> <NavbarItem label="Home" /> </Link>
                     <Link href="/About"> <NavbarItem label="About" /> </Link>
                 </div>
-                <div onClick={toggleMobileMenu} className="md:hidden flex flex-row items-center gap-2 ml-8 cursor-pointer relative">
+                <div onClick={toggleMobileMenu} className="md:hidden flex flex-row items-center gap-2 ml-2 cursor-pointer relative">
                     <BsChevronDown className={`text-green-400 transition ${showMobileMenu ? "text-pink-400 rotate-180" : "rotate-0"}`} />
                     <MobileMenu visible={showMobileMenu} />
                 </div>
