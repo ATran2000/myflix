@@ -6,6 +6,7 @@ import useInfoModal from "@/hooks/useInfoModal"
 import Navbar from '@/components/Navbar'
 
 export default function Home() {
+  const { data: animes = [] } = useAnimeList()
   const { isOpen, closeModal } = useInfoModal()
 
   return (
@@ -31,6 +32,7 @@ export default function Home() {
       </Head>
       <Navbar />
       <InfoModal visible={isOpen} onClose={closeModal} />
+      <AnimeList data={animes} />
     </div>
   )
 }
