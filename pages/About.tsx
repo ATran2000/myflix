@@ -1,7 +1,21 @@
 import Head from 'next/head'
 import Navbar from '@/components/Navbar'
+import { BiChevronDown } from "react-icons/bi"
+import { useRef } from 'react';
 
 export default function About() {
+    const snapRef = useRef<HTMLDivElement>(null);
+
+    const handleButtonClick = () => {
+        if (snapRef.current) {
+            snapRef.current.scrollIntoView({
+                behavior: "smooth",
+                block: "start",
+                inline: "nearest",
+            });
+        }
+    };
+
     return (
         <div>
             <Head>
@@ -25,10 +39,33 @@ export default function About() {
             </Head>
             <Navbar />
             <div className="snap-y snap-mandatory h-screen overflow-y-auto">
-                <div className="snap-start snap-always">
+                <div className="snap-start snap-always relative">
                     <img className="w-full md:h-screen" src="/images/chainsaw_man_movie_theater.gif" alt="Chainsaw Man Movie Theater Gif" />
+                    <button className="
+                        absolute
+                        bottom-12
+                        left-1/2
+                        transform 
+                        -translate-x-1/2 
+                        cursor-pointer
+                        ml-auto
+                        group/item
+                        w-6
+                        h-6
+                        md:w-10
+                        md:h-10
+                        border-white
+                        border-2
+                        rounded-full
+                        flex
+                        justify-center
+                        items-center
+                        hover:border-neutral-300
+                    " onClick={handleButtonClick}>
+                        <BiChevronDown size={30} className="text-white hover:text-neutral-300" />
+                    </button>
                 </div>
-                <div className="snap-start snap-always h-screen bg-gradient-to-b from-black to-zinc-900">
+                <div className="snap-start snap-always h-screen bg-gradient-to-b from-black to-zinc-900" ref={snapRef}>
                     <h1 className="font-mono text-green-400 text-center text-5xl pt-24 ">About</h1>
                 </div>
             </div>
