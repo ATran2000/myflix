@@ -10,6 +10,7 @@ export default function Navbar() {
     const [showBackground, setShowBackground] = useState(false)
     const [showMobileMenu, setShowMobileMenu] = useState(false)
 
+
     useEffect(() => {
         function handleScroll() {
             if (window.scrollY >= TOP_OFFSET) {
