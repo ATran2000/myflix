@@ -65,8 +65,46 @@ export default function About() {
                         <BiChevronDown size={30} className="text-white hover:text-neutral-300" />
                     </button>
                 </div>
-                <div className="snap-start snap-always h-screen bg-gradient-to-b from-black to-zinc-900" ref={snapRef}>
-                    <h1 className="font-mono text-green-400 text-center text-5xl pt-24 ">About</h1>
+                <div className="snap-start snap-always h-screen bg-gradient-to-b from-black to-zinc-900 text-center" ref={snapRef}>
+                    <div>
+                        <h1 className="font-mono text-green-400 text-5xl pt-24 ">About</h1>
+                        <p className="font-mono text-pink-400 mt-8"> Stuff about anime </p>
+                    </div>
+                    <div>
+                        <h1 className="font-mono text-green-400 text-5xl pt-24 ">Technologies Used</h1>
+                        <div className=" mt-8 w-fit m-auto border border-white border-4 bg-white rounded-3xl overflow-hidden w-3/4">
+                            <table className="table-fixed bg-zinc-900 mx-auto rounded-3xl w-full">
+                                <thead className="bg-pink-200 text-xl">
+                                    <tr>
+                                        <th colSpan={2} className="font-mono text-pink-400 p-4 w-1/4 ">Technology</th>
+                                        <th className="font-mono text-pink-400 p-4">Description</th>
+                                    </tr>
+                                </thead>
+                                <tbody className="divide-y-2 divide-white">
+                                    <tr className="divide-x-2 divide-white">
+                                        <td className="p-4 bg-white flex justify-center items-center"> <img className="h-16 w-22" src="/images/nextjs_logo.svg" alt="NextJS Logo" /></td>
+                                        <td className="p-4"><p className="text-white">NextJS</p></td>
+                                        <td className="p-4 overflow-y-scroll scrollbar"><p className="text-white break-words h-6">Stuff about nextjs</p></td>
+                                    </tr>
+                                    <tr className="divide-x-2 divide-white">
+                                        <td className="p-4 bg-white flex justify-center items-center"><img className="h-16 w-22" src="/images/tailwindcss_logo.svg" alt="TailwindCSS Logo" /></td>
+                                        <td className="p-4"><p className="text-white">TailwindCSS</p></td>
+                                        <td className="p-4 overflow-y-scroll scrollbar"><p className="text-white break-words h-6">Stuff about tailwindcss</p></td>
+                                    </tr>
+                                    <tr className="divide-x-2 divide-white">
+                                        <td className="p-4 bg-white flex justify-center items-center"><img className="h-16 w-22" src="/images/mongodb_logo.svg" alt="MongoDB Logo" /></td>
+                                        <td className="p-4"><p className="text-white">MongoDB</p></td>
+                                        <td className="p-4 overflow-y-scroll scrollbar"><p className="text-white break-words h-6">Stuff about mongodb</p></td>
+                                    </tr>
+                                    <tr className="divide-x-2 divide-white">
+                                        <td className="p-4 bg-white flex justify-center items-center"><img className="h-16 w-22" src="/images/vercel_logo.svg" alt="Vercel Logo" /></td>
+                                        <td className="p-4"><p className="text-white">Vercel</p></td>
+                                        <td className="p-4 overflow-y-scroll scrollbar"><p className="text-white break-words h-6">Stuff about vercel</p></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

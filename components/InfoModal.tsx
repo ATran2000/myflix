@@ -74,8 +74,8 @@ export default function InfoModal({ visible, onClose }: InfoModalProps) {
                                 pointer-events-none
                             "
                             src={data?.videoUrl + "&controls=0"}
-                            title="YouTube video player" 
-                            allow="autoplay" 
+                            title="YouTube video player"
+                            allow="autoplay"
                             allowFullScreen>
                         </iframe>
                         <div className="
@@ -108,7 +108,7 @@ export default function InfoModal({ visible, onClose }: InfoModalProps) {
                         </div>
                     </div>
                     <div className="px-12 py-6 h-64 md:h-96 overflow-auto scrollbar">
-                    <p className="text-green-400 font-semibold text-lg">
+                        <p className="text-green-400 font-semibold text-lg">
                             {data?.releaseDate}
                         </p>
                         <p className="text-green-400 font-semibold text-lg">
