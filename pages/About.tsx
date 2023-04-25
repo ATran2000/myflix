@@ -72,7 +72,7 @@ export default function About() {
                     </div>
                     <div>
                         <h1 className="font-mono text-green-400 text-5xl pt-24 ">Technologies Used</h1>
-                        <div className=" mt-8 w-fit m-auto border border-white border-4 bg-white rounded-3xl overflow-hidden w-3/4">
+                        <div className=" mt-8 m-auto border border-white border-4 bg-white rounded-3xl overflow-hidden w-3/5">
                             <table className="table-fixed bg-zinc-900 mx-auto rounded-3xl w-full">
                                 <thead className="bg-pink-200 text-xl">
                                     <tr>
@@ -82,24 +82,24 @@ export default function About() {
                                 </thead>
                                 <tbody className="divide-y-2 divide-white">
                                     <tr className="divide-x-2 divide-white">
-                                        <td className="p-4 bg-white flex justify-center items-center"> <img className="h-16 w-22" src="/images/nextjs_logo.svg" alt="NextJS Logo" /></td>
+                                        <td className="p-4 bg-white flex justify-center items-center"> <img className="h-12 w-20" src="/images/nextjs_logo.svg" alt="NextJS Logo" /></td>
                                         <td className="p-4"><p className="text-white">NextJS</p></td>
-                                        <td className="p-4 overflow-y-scroll scrollbar"><p className="text-white break-words h-6">Stuff about nextjs</p></td>
+                                        <td className="p-4 overflow-y-scroll scrollbar"><p className="text-white break-words h-6 text-justify">Stuff about nextjs</p></td>
                                     </tr>
                                     <tr className="divide-x-2 divide-white">
-                                        <td className="p-4 bg-white flex justify-center items-center"><img className="h-16 w-22" src="/images/tailwindcss_logo.svg" alt="TailwindCSS Logo" /></td>
+                                        <td className="p-4 bg-white flex justify-center items-center"><img className="h-12 w-20" src="/images/tailwindcss_logo.svg" alt="TailwindCSS Logo" /></td>
                                         <td className="p-4"><p className="text-white">TailwindCSS</p></td>
-                                        <td className="p-4 overflow-y-scroll scrollbar"><p className="text-white break-words h-6">Stuff about tailwindcss</p></td>
+                                        <td className="p-4 overflow-y-scroll scrollbar"><p className="text-white break-words h-6 text-justify">Stuff about tailwindcss</p></td>
                                     </tr>
                                     <tr className="divide-x-2 divide-white">
-                                        <td className="p-4 bg-white flex justify-center items-center"><img className="h-16 w-22" src="/images/mongodb_logo.svg" alt="MongoDB Logo" /></td>
+                                        <td className="p-4 bg-white flex justify-center items-center"><img className="h-12 w-20" src="/images/mongodb_logo.svg" alt="MongoDB Logo" /></td>
                                         <td className="p-4"><p className="text-white">MongoDB</p></td>
-                                        <td className="p-4 overflow-y-scroll scrollbar"><p className="text-white break-words h-6">Stuff about mongodb</p></td>
+                                        <td className="p-4 overflow-y-scroll scrollbar"><p className="text-white break-words h-6 text-justify">Stuff about mongodb</p></td>
                                     </tr>
                                     <tr className="divide-x-2 divide-white">
-                                        <td className="p-4 bg-white flex justify-center items-center"><img className="h-16 w-22" src="/images/vercel_logo.svg" alt="Vercel Logo" /></td>
+                                        <td className="p-4 bg-white flex justify-center items-center"><img className="h-12 w-20" src="/images/vercel_logo.svg" alt="Vercel Logo" /></td>
                                         <td className="p-4"><p className="text-white">Vercel</p></td>
-                                        <td className="p-4 overflow-y-scroll scrollbar"><p className="text-white break-words h-6">Stuff about vercel</p></td>
+                                        <td className="p-4 overflow-y-scroll scrollbar"><p className="text-white break-words h-6 text-justify">Stuff about vercel</p></td>
                                     </tr>
                                 </tbody>
                             </table>
