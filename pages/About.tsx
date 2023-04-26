@@ -42,9 +42,12 @@ export default function About() {
             <div className="snap-y snap-mandatory h-screen overflow-y-auto">
                 <div className="snap-start snap-always relative">
                     <img className="w-full md:h-screen" src="/images/chainsaw_man_movie_theater.gif" alt="Chainsaw Man Movie Theater Gif" />
+                    <img className="w-full md:h-screen md:hidden" src="/images/chainsaw_man_movie_theater.gif" alt="Chainsaw Man Movie Theater Gif" />
+                    <img className="w-full md:h-screen md:hidden" src="/images/chainsaw_man_movie_theater.gif" alt="Chainsaw Man Movie Theater Gif" />
                     <button className="
                         absolute
-                        bottom-12
+                        bottom-14
+                        md:bottom-12
                         left-1/2
                         transform 
                         -translate-x-1/2 
@@ -68,14 +71,11 @@ export default function About() {
                 </div>
                 <div className="snap-start snap-always h-screen bg-gradient-to-b from-black to-zinc-900 text-center" ref={snapRef}>
                     <div>
-                        <h1 className="font-mono text-green-400 text-5xl pt-24 ">About</h1>
-                        <p className="font-mono text-pink-400 mt-8"> Stuff about anime </p>
-                        <p className="font-mono text-pink-400 mt-8"> Stuff about anime </p>
-                        <p className="font-mono text-pink-400 mt-8"> Stuff about anime </p>
+                        <h1 className="font-mono text-green-400 md:text-5xl pt-24 ">About</h1>
                         <p className="font-mono text-pink-400 mt-8"> Stuff about anime </p>
                     </div>
                     <div>
-                        <h1 className="font-mono text-green-400 text-5xl pt-24 ">Technologies Used</h1>
+                        <h1 className="font-mono text-green-400 md:text-5xl pt-24 ">Technologies Used</h1>
                         <TechnologiesTable />
                     </div>
                 </div>
