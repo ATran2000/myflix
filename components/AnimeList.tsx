@@ -12,7 +12,7 @@ export default function AnimeList({ data }: AnimeListProps) {
     }
 
     return (
-        <div className="px-4 md:px-12 pt-20 pb-52">
+        <div className="px-4 md:px-12 pt-20 pb-56">
             <div>
                 <RandomRecommendation />
                 <div className="grid grid-cols-4 gap-2">
