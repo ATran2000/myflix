@@ -3,13 +3,13 @@ export default function TechnologiesTable() {
         <div className=" mt-8 m-auto border border-white border-2 bg-white rounded-3xl overflow-hidden w-3/5">
             <div className="h-96 overflow-y-scroll scrollbar border border-white border-2 bg-white rounded-3xl overflow-hidden">
                 <table className="table-auto bg-zinc-900 mx-auto rounded-3xl w-full">
-                    <thead className="bg-pink-200 text-xl">
+                    <thead className="bg-pink-200 text-xl sticky top-0">
                         <tr>
                             <th colSpan={2} className="font-mono text-pink-400 p-4 w-1/4">Technology</th>
                             <th className="font-mono text-pink-400 p-4">Description</th>
                         </tr>
                     </thead>
-                    <tbody className="divide-y-2 divide-white">
+                    <tbody className="divide-y-2 divide-white-100">
                         <tr className="divide-x-2 divide-white">
                             <td className="p-4 bg-white flex justify-center items-center"> <img className="h-12 w-20" src="/images/nextjs_logo.svg" alt="NextJS Logo" /></td>
                             <td className="p-4"><p className="text-white">NextJS</p></td>
