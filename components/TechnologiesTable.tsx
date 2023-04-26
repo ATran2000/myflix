@@ -1,3 +1,4 @@
+import TechnologiesTableRow from "./TechnologiesTableRow";
 import Link from "next/link";
 
 export default function TechnologiesTable() {
@@ -12,24 +13,13 @@ export default function TechnologiesTable() {
                         </tr>
                     </thead>
                     <tbody className="divide-y-2 divide-white-100">
-                        <tr className="divide-x-2 divide-white">
-                            <td className="bg-white hover:opacity-90">
-                                <Link href="https://nextjs.org/" className="p-4 block w-full flex justify-center items-center">
-                                    <img className="h-12 w-20" src="/images/nextjs_logo.svg" alt="NextJS Logo" />
-                                </Link>
-                            </td>
-                            <td className="p-4">
-                                <Link href="https://nextjs.org/" >
-                                    <p className="text-white hover:underline">NextJS</p>
-                                </Link>
-                            </td>
-                            <td className="p-4 overflow-y-scroll scrollbar">
-                                <p className="text-white break-words h-12 text-left text-xs md:text-base">
-                                    NextJS is an open-source React framework for web development. It is used for its component-based architecture, JSX syntax, automatic code splitting,
-                                    pre-rendering capabilities, ease of routing, and typescript support.
-                                </p>
-                            </td>
-                        </tr>
+                        <TechnologiesTableRow
+                            link="https://nextjs.org/"
+                            technologyName={"NextJS"}
+                            imageSource={"/images/nextjs_logo.svg"}
+                            imageAlt={"NextJS Logo"}
+                            description={"NextJS is an open-source React framework for web development. It is used for its component-based architecture, JSX syntax, automatic code splitting, pre-rendering capabilities, ease of routing, and typescript support."}
+                        />
                         <tr className="divide-x-2 divide-white">
                             <td className="bg-white hover:opacity-90">
                                 <Link href="https://www.typescriptlang.org/" className="p-4 block w-full flex justify-center items-center">
