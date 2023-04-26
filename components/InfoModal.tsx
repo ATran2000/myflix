@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useState } from "react"
+import { useCallback, useEffect, useRef, useState } from "react"
 import { AiOutlineClose } from "react-icons/ai"
 
 import PlayButton from "./PlayButton"
@@ -12,6 +12,7 @@ interface InfoModalProps {
 
 export default function InfoModal({ visible, onClose }: InfoModalProps) {
     const [isVisible, setIsVisible] = useState(!!visible)
+    const modalRef = useRef<HTMLDivElement>(null)
 
     const { animeId } = useInfoModal()
     const { data = {} } = useAnime(animeId)
@@ -26,6 +27,15 @@ export default function InfoModal({ visible, onClose }: InfoModalProps) {
             onClose()
         }, 300)
     }, [onClose])
+
+    const handleBackgroundClick = useCallback(
+        (event: React.MouseEvent<HTMLDivElement>) => {
+            if (modalRef.current && !modalRef.current.contains(event.target as Node)) {
+                handleClose()
+            }
+        },
+        [handleClose]
+    )
 
     if (!isVisible) {
         return null
@@ -45,7 +55,7 @@ export default function InfoModal({ visible, onClose }: InfoModalProps) {
             overflow-y-auto
             fixed
             inset-0
-        ">
+        " onClick={handleBackgroundClick}>
             <div className="
                 relative
                 w-auto
@@ -53,7 +63,7 @@ export default function InfoModal({ visible, onClose }: InfoModalProps) {
                 max-w-3xl
                 rounded-md
                 overflow-hidden
-            ">
+            " ref={modalRef} >
                 <div className={`
                     ${isVisible ? "scale-100" : "scale-0"}
                     transform
@@ -123,6 +133,6 @@ export default function InfoModal({ visible, onClose }: InfoModalProps) {
                     </div>
                 </div>
             </div>
-        </div>
+        </div >
     )
 }
