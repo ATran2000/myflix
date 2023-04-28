@@ -1,4 +1,12 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app --typescript`].
+
+## About
+
+Just like films and tv shows, anime is a medium that offers a diverse range of genres and storytelling styles, allowing for endless possibilities in creating unique and captivating narratives that can appeal to a wide range of audiences. As a fan, I would like to share some animes I have enjoyed in the past with others but in a more engaging, and personal way.
+
+Therefore, as a programmer and someone with limited frontend development experience, I saw this as a beneficial opportunity to learn more about frontend development and expand my skillset, while also presenting my favorite animes in a interactive format.
+
+Link to the website: [`myFlix`](https://alvins-myflix.vercel.app/)
 
 ## Getting Started
 
@@ -15,8 +23,6 @@ pnpm dev
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
-
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
 
 The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
 
