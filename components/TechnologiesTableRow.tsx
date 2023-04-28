@@ -1,5 +1,3 @@
-import Link from "next/link";
-
 interface TechnologiesTableRowProps {
     link: string,
     technologyName: string,
@@ -13,14 +11,14 @@ export default function TechnologiesTableRow({ link, technologyName, imageSource
     return (
         <tr className="divide-x-2 divide-white">
             <td className="bg-white hover:opacity-90">
-                <Link href={link} className="p-4 block w-full flex justify-center items-center">
+                <a href={link} rel="noopener noreferrer" target="_blank" className="p-4 block w-full flex justify-center items-center">
                     <img className={`${imageSize}`} src={imageSource} alt={imageAlt} />
-                </Link>
+                </a>
             </td>
             <td className="p-4 bg-zinc-800">
-                <Link href={link} >
+                <a href={link} rel="noopener noreferrer" target="_blank">
                     <p className="text-white hover:underline hover:text-slate-400 font-semibold">{technologyName}</p>
-                </Link>
+                </a>
             </td>
             <td className="p-4 overflow-y-scroll scrollbar bg-zinc-800">
                 <p className="text-white break-words h-12 text-left text-xs md:text-base">
