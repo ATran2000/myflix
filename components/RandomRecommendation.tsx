@@ -9,7 +9,7 @@ export default function RandomRecommendation() {
     const handleClick = useCallback(() => {
         openModal(data?.id)
         revalidateData();
-    }, [revalidateData]);
+    }, [data, openModal, revalidateData]);
 
     return (
         <div className="flex justify-center items-center m-auto w-80 mb-6">

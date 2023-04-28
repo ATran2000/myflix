@@ -75,7 +75,7 @@ export default function About() {
                         <p className="text-white md:mt-8 text-xs md:text-lg w-4/5 md:w-3/5 m-auto text-justify"> 
                         Just like films and tv shows, anime is a medium that offers a diverse range of genres and storytelling styles, 
                         allowing for endless possibilities in creating unique and captivating narratives that can appeal to a wide 
-                        range of audiences. As a fan, I would like to share some animes I've enjoyed in the past with others but in a more engaging, 
+                        range of audiences. As a fan, I would like to share some animes I have enjoyed in the past with others but in a more engaging, 
                         and personal way.<br/><br/>
                         Therefore, as a programmer and someone with limited frontend development experience, I saw this as a beneficial opportunity to
                         learn more about frontend development and expand my skillset, while also presenting my favorite animes in a interactive format.
