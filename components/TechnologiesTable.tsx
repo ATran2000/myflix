@@ -74,7 +74,7 @@ export default function TechnologiesTable() {
                             imageSource={"/images/swr_logo.png"}
                             imageSize={"h-6 w-14 md:h-12 md:w-20"}
                             imageAlt={"SWR Logo"}
-                            description={"SWR is an open-source React hooks library for data fetching and caching."}
+                            description={"SWR is an open-source React hooks library for data fetching and caching. It is mainly used for its built-in caching features to display cached data to the user before it revalidates it with updated data."}
                         />
                         <TechnologiesTableRow
                             link={"https://axios-http.com/"}
@@ -82,7 +82,7 @@ export default function TechnologiesTable() {
                             imageSource={"/images/axios_logo.svg"}
                             imageSize={"h-6 w-14 md:h-12 md:w-20"}
                             imageAlt={"Axios Logo"}
-                            description={"Stuff about Axios"}
+                            description={"Axios is an open-source promised-based HTTP client for Javascript. It is used to make requests to our internal API to fetch the data required for the website."}
                         />
                         <TechnologiesTableRow
                             link={"https://eslint.org/"}
@@ -90,7 +90,7 @@ export default function TechnologiesTable() {
                             imageSource={"/images/eslint_logo.svg"}
                             imageSize={"h-6 w-14 md:h-12 md:w-20"}
                             imageAlt={"ESLint Logo"}
-                            description={"Stuff about ESLint"}
+                            description={"ESLint is an open-source Javascript linting utility for identifying problematic patterns in Javascript code. It is used to maintain a standard across the whole source code to keep it consistent and less buggy." }
                         />
                         <TechnologiesTableRow
                             link={"https://lodash.com/"}
@@ -98,23 +98,23 @@ export default function TechnologiesTable() {
                             imageSource={"/images/lodash_logo.svg"}
                             imageSize={"h-6 w-6 md:h-12 md:w-12"}
                             imageAlt={"Lodash Logo"}
-                            description={"Stuff about Lodash"}
+                            description={"Lodash is an open-source JavaScript utility library. It is used for its useful utilities to simplify common programming tasks similar to Pandas and NumPy for Python."}
                         />
                         <TechnologiesTableRow
                             link={"https://git-scm.com/"}
                             technologyName={"Git"}
                             imageSource={"/images/git_logo.png"}
-                            imageSize={"h-6 w-10 md:h-12 md:w-16"}
+                            imageSize={"h-6 w-8 md:h-12 md:w-16"}
                             imageAlt={"Git Logo"}
-                            description={"Stuff about Git"}
+                            description={"Git is an open-source version control system that manages and keeps track of the source code history. Git is used to keep track of all the changes in the code made throughout development of this website."}
                         />
                         <TechnologiesTableRow
                             link={"https://github.com/"}
                             technologyName={"Github"}
                             imageSource={"/images/github_logo.png"}
-                            imageSize={"h-12 w-20"}
+                            imageSize={"h-6 w-14 md:h-12 md:w-20"}
                             imageAlt={"Github Logo"}
-                            description={"Stuff about Github"}
+                            description={"Github is a cloud hosting service for software development and version control using Git. Github is used to store the source code and historical source code of this website."}
                         />
                     </tbody>
                 </table>
