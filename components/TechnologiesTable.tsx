@@ -1,9 +1,8 @@
 import TechnologiesTableRow from "./TechnologiesTableRow";
-import Link from "next/link";
 
 export default function TechnologiesTable() {
     return (
-        <div className=" mt-8 m-auto border border-white border-2 bg-white rounded-3xl overflow-hidden h-60 md:h-full md:w-3/5">
+        <div className="md:mt-8 m-auto border border-white border-2 bg-white rounded-3xl overflow-hidden h-60 md:h-full md:w-3/5">
             <div className="h-96 overflow-y-scroll scrollbar border border-white border-2 bg-white rounded-3xl overflow-hidden">
                 <table className="table-auto bg-zinc-900 mx-auto rounded-3xl w-full">
                     <thead className="bg-pink-200 text-xl sticky top-0">

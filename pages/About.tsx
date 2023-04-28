@@ -71,11 +71,18 @@ export default function About() {
                 </div>
                 <div className="snap-start snap-always h-screen bg-gradient-to-b from-black to-zinc-900 text-center" ref={snapRef}>
                     <div>
-                        <h1 className="font-mono text-green-400 md:text-5xl pt-24 ">About</h1>
-                        <p className="font-mono text-pink-400 mt-8"> Stuff about anime </p>
+                        <h1 className="font-mono text-green-400 md:text-5xl pt-20 md:pt-24 ">About</h1>
+                        <p className="text-white md:mt-8 text-xs md:text-lg w-4/5 md:w-3/5 m-auto text-justify"> 
+                        Just like films and tv shows, anime is a medium that offers a diverse range of genres and storytelling styles, 
+                        allowing for endless possibilities in creating unique and captivating narratives that can appeal to a wide 
+                        range of audiences. As a fan, I would like to share some animes I've enjoyed in the past with others but in a more engaging, 
+                        and personal way.<br/><br/>
+                        Therefore, as a programmer and someone with limited frontend development experience, I saw this as a beneficial opportunity to
+                        learn more about frontend development and expand my skillset, while also presenting my favorite animes in a interactive format.
+                        </p>
                     </div>
                     <div>
-                        <h1 className="font-mono text-green-400 md:text-5xl pt-24 ">Technologies Used</h1>
+                        <h1 className="font-mono text-green-400 md:text-5xl pt-5 md:mt-16">Technologies Used</h1>
                         <TechnologiesTable />
                     </div>
                 </div>

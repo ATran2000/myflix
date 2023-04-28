@@ -13,7 +13,7 @@ export default function RandomRecommendation() {
 
     return (
         <div className="flex justify-center items-center m-auto w-80 mb-6">
-            <div onClick={handleClick} className="text-center font-mono text-green-400 cursor-pointer hover:text-green-500 transition w-full pt-4 pl-2 pr-2">
+            <div onClick={handleClick} className="text-center font-mono text-green-400 cursor-pointer hover:text-green-500 transition w-full pt-4 pl-2 pr-2 text-xs md:text-base">
                 <h1>Click for Random Recommendation</h1>
             </div>
         </div>

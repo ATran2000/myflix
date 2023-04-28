@@ -17,12 +17,12 @@ export default function TechnologiesTableRow({ link, technologyName, imageSource
                     <img className={`${imageSize}`} src={imageSource} alt={imageAlt} />
                 </Link>
             </td>
-            <td className="p-4">
+            <td className="p-4 bg-zinc-800">
                 <Link href={link} >
-                    <p className="text-white hover:underline">{technologyName}</p>
+                    <p className="text-white hover:underline hover:text-slate-400 font-semibold">{technologyName}</p>
                 </Link>
             </td>
-            <td className="p-4 overflow-y-scroll scrollbar bg-zinc-900">
+            <td className="p-4 overflow-y-scroll scrollbar bg-zinc-800">
                 <p className="text-white break-words h-12 text-left text-xs md:text-base">
                     {description}
                 </p>
