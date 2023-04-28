@@ -21,7 +21,7 @@ export default function TechnologiesTableRow({ link, technologyName, imageSource
                 </a>
             </td>
             <td className="p-4 overflow-y-scroll scrollbar bg-zinc-800">
-                <p className="text-white break-words h-12 text-left text-xs md:text-base">
+                <p className="text-white break-words h-6 md:h-12 text-left text-xs md:text-base">
                     {description}
                 </p>
             </td>
