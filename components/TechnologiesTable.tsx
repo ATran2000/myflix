@@ -17,6 +17,7 @@ export default function TechnologiesTable() {
                             link={"https://nextjs.org/"}
                             technologyName={"NextJS"}
                             imageSource={"/images/nextjs_logo.svg"}
+                            imageSize={"h-12 w-20"}
                             imageAlt={"NextJS Logo"}
                             description={"NextJS is an open-source React framework for web development. It is used for its component-based architecture, JSX syntax, automatic code splitting, pre-rendering capabilities, ease of routing, and typescript support."}
                         />
@@ -24,55 +25,63 @@ export default function TechnologiesTable() {
                             link={"https://www.typescriptlang.org/"}
                             technologyName={"TypeScript"}
                             imageSource={"/images/typescript_logo.svg"}
+                            imageSize={"h-12 w-20"}
                             imageAlt={"TypeScript Logo"}
-                            description={"Stuff about typescript"}
+                            description={"TypeScript is an open-source programming language that is a superset of JavaScript. It is used for reliability and maintainability due to its type-safe code writing, and object-oriented programming features such as interfaces."}
                         />
                         <TechnologiesTableRow
                             link={"https://tailwindcss.com/"}
                             technologyName={"TailwindCSS"}
                             imageSource={"/images/tailwindcss_logo.svg"}
+                            imageSize={"h-12 w-20"}
                             imageAlt={"TailwindCSS Logo"}
-                            description={"Stuff about tailwindcss"}
+                            description={"TailwindCSS is an open-source CSS framework. It is used for its easy to use utility classes which provides pre-designed CSS classes to use for styling and responsive design."}
                         />
                         <TechnologiesTableRow
                             link={"https://www.mongodb.com/"}
                             technologyName={"MongoDB"}
                             imageSource={"/images/mongodb_logo.svg"}
+                            imageSize={"h-12 w-20"}
                             imageAlt={"MongoDB Logo"}
-                            description={"Stuff about mongodb"}
+                            description={"MongoDB is an open-source document-oriented database. It is used for storing the data for each anime in the anime list."}
                         />
                         <TechnologiesTableRow
                             link={"https://www.prisma.io/"}
                             technologyName={"Prisma"}
                             imageSource={"/images/prisma_logo.svg"}
+                            imageSize={"h-12 w-20"}
                             imageAlt={"Prisma Logo"}
-                            description={"Stuff about prisma"}
+                            description={"Prisma is an open-source ORM (Object-Relational Mapping) tool. It is used to define the database schema and to interact with the data from the MongoDB database with ease."}
                         />
                         <TechnologiesTableRow
                             link={"https://vercel.com/"}
                             technologyName={"Vercel"}
                             imageSource={"/images/vercel_logo.svg"}
+                            imageSize={"h-12 w-20"}
                             imageAlt={"Vercel Logo"}
-                            description={"Stuff about vercel"}
+                            description={"Vercel is a cloud platform for deploying web applications. It is used to host this website because Vercel created NextJS making it very compatible."}
                         />
                         <TechnologiesTableRow
                             link={"https://docs.pmnd.rs/zustand/getting-started/introduction"}
                             technologyName={"Zustand"}
                             imageSource={"/images/zustand_logo.png"}
+                            imageSize={"h-12 w-20"}
                             imageAlt={"Zustand Logo"}
-                            description={"Stuff about zustand"}
+                            description={"Zustand is an open-source state management library for React applications. It is used to create the info modal when hovering over the anime cards. Compared to Redux, Zustand has a far more simpler and intuitive API."}
                         />
                         <TechnologiesTableRow
                             link={"https://swr.vercel.app/"}
                             technologyName={"SWR"}
                             imageSource={"/images/swr_logo.png"}
+                            imageSize={"h-12 w-20"}
                             imageAlt={"SWR Logo"}
-                            description={"Stuff about SWR"}
+                            description={"SWR is an open-source React hooks library for data fetching and caching."}
                         />
                         <TechnologiesTableRow
                             link={"https://axios-http.com/"}
                             technologyName={"Axios"}
                             imageSource={"/images/axios_logo.svg"}
+                            imageSize={"h-12 w-20"}
                             imageAlt={"Axios Logo"}
                             description={"Stuff about Axios"}
                         />
@@ -80,47 +89,31 @@ export default function TechnologiesTable() {
                             link={"https://eslint.org/"}
                             technologyName={"ESLint"}
                             imageSource={"/images/eslint_logo.svg"}
+                            imageSize={"h-12 w-20"}
                             imageAlt={"ESLint Logo"}
                             description={"Stuff about ESLint"}
                         />
-                        <tr className="divide-x-2 divide-white">
-                            <td className="bg-white hover:opacity-90">
-                                <Link href="https://lodash.com/" className="p-4 block w-full flex justify-center items-center">
-                                    <img className="h-12 w-12" src="/images/lodash_logo.svg" alt="Lodash Logo" />
-                                </Link>
-                            </td>
-                            <td className="p-4">
-                                <Link href="https://lodash.com/" >
-                                    <p className="text-white hover:underline">Lodash</p>
-                                </Link>
-                            </td>
-                            <td className="p-4 overflow-y-scroll scrollbar">
-                                <p className="text-white break-words h-12 text-left text-xs md:text-base">
-                                    Stuff about Lodsah
-                                </p>
-                            </td>
-                        </tr>
-                        <tr className="divide-x-2 divide-white">
-                            <td className="bg-white hover:opacity-90">
-                                <Link href="https://git-scm.com/" className="p-4 block w-full flex justify-center items-center">
-                                    <img className="h-12 w-16" src="/images/git_logo.png" alt="Git Logo" />
-                                </Link>
-                            </td>
-                            <td className="p-4">
-                                <Link href="https://git-scm.com/" >
-                                    <p className="text-white hover:underline">Git</p>
-                                </Link>
-                            </td>
-                            <td className="p-4 overflow-y-scroll scrollbar">
-                                <p className="text-white break-words h-12 text-left text-xs md:text-base">
-                                    Stuff about Git
-                                </p>
-                            </td>
-                        </tr>
+                        <TechnologiesTableRow
+                            link={"https://lodash.com/"}
+                            technologyName={"Lodash"}
+                            imageSource={"/images/lodash_logo.svg"}
+                            imageSize={"h-12 w-12"}
+                            imageAlt={"Lodash Logo"}
+                            description={"Stuff about Lodash"}
+                        />
+                        <TechnologiesTableRow
+                            link={"https://git-scm.com/"}
+                            technologyName={"Git"}
+                            imageSource={"/images/git_logo.png"}
+                            imageSize={"h-12 w-16"}
+                            imageAlt={"Git Logo"}
+                            description={"Stuff about Git"}
+                        />
                         <TechnologiesTableRow
                             link={"https://github.com/"}
                             technologyName={"Github"}
                             imageSource={"/images/github_logo.png"}
+                            imageSize={"h-12 w-20"}
                             imageAlt={"Github Logo"}
                             description={"Stuff about Github"}
                         />
