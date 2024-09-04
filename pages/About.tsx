@@ -78,7 +78,7 @@ export default function About() {
                         range of audiences. As a fan, I would like to share some animes I have enjoyed in the past with others but in a more engaging, 
                         and personal way.<br/><br/>
                         Therefore, as a programmer and someone with limited frontend development experience, I saw this as a beneficial opportunity to
-                        learn more about frontend development and expand my skillset, while also presenting my favorite animes in a interactive format.
+                        learn more about frontend development and expand my skillset, while also presenting my favorite animes in an interactive format.
                         </p>
                     </div>
                     <div>
